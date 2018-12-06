@@ -25,7 +25,7 @@ In Kubernetes you make use of "Sealed Secrets" to securely store sensitive data 
 
 ## Common Kube commands
 
-See [TBD]
+See [https://github.com/colinbut/kubernetes-commands-cheatsheet](https://github.com/colinbut/kubernetes-commands-cheatsheet)
 
 ## Supporting Tools
 - Kubectl (Kubernetes CLI)
