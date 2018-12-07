@@ -89,4 +89,4 @@ See [https://github.com/colinbut/kubernetes-commands-cheatsheet](https://github.
 
 #### <a name="fblog"></a>Fblog
 
-(fblog)[https://github.com/brocode/fblog] is simple command line JSON log viewer which is ideal to be used with the other log tailing tools above. It is a tool written in Rust.
+[fblog](https://github.com/brocode/fblog) is simple command line JSON log viewer which is ideal to be used with the other log tailing tools above. It is a tool written in Rust.
