@@ -6,6 +6,10 @@ This repository puts together all the resources related to Kubernetes together.
 
 * [What is?](#what-is)
 * [Concepts](#concepts)
+   * [Pods](#pods)
+   * [Nodes](#nodes)
+   * [Services](#services)
+   * [Deployments](#deployments)
 * [Configurations](#configurations)
 * [Secrets](#secrets)
 * [Common Kube Commands](#common-kube-commands)
@@ -25,10 +29,26 @@ Kubernetes is a container orchestration framework. Scheduling and general Manage
 + Pods
 + Nodes
 + Services
-+ Deployment
++ Deployments
 + ConfigMaps
 + Sealed Secrets
 + Volumes / Persistent Volumes (PV) & Claims (PVC) 
+
+#### <a name="pods"></a>Pods
+
+Pods are logical groupings of Containers in Kubernetes. They provide an abstraction over Containers. Pods can contain one or many containers.
+
+#### <a name="Nodes"></a>Nodes
+
+Nodes are locations where the pods reside. These can be Physical servers or Virtual Machines (VMs).
+
+#### <a name="Services"></a>Services
+
+Services are another higher level of abstraction over Pods which provides a logical grouping of pods. It gives features such as Load Balancing.
+
+#### <a name="deployments"></a>Deployments
+
+Deployments are a management way of managing a "Deployment" in Kubernetes. Specifying a deployment allows Kubernetes to manage the lifecycle of the pods and services for your container. To be able to automatically scale up or down depending on specified requirements (i.e. to ensure the number of pods matches the number of 'replicas' as defined in the deployment descriptor yaml file.) For e.g. if you delete your pods, Kubernetes will ensure the system always adheres to the scaling rules definied in that deployment descriptor yaml file.
 
 ### <a name="configurations"></a>Configurations
 
